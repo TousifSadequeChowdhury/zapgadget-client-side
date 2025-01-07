@@ -11,7 +11,7 @@ import Detail from './components/details/Detail';
 import DashbordMain from './components/deshbord/DashbordMain';
 import Products from './components/Cards/Products';
 import { CartProvider } from './components/CartProvider';
-import ErrorPage from './Errorpage';
+import ErrorPage from './components/Errorpage';
 import AddtoCartsItem from './components/AddtoCartsItem';
 import Addtowishlist from './components/Addtowishlist';
 //import { CartProvider } from './CartContext';

@@ -8,7 +8,12 @@ const HeroMain = () => {
     <h1 className='font-extrabold text-4xl text-center'>Upgrade Your Tech Accessorize with Gadget Heaven Accessories</h1>
     <p className='text-center'>Explore the latest gadgets that will take your experience to the next level. From smart devices <br></br>to the coolest accessories, we have it all!</p>
 </div>
-<button className='btn rounded-full text-[#9538E2] my-4'>Shop Now</button>
+<button
+  className="btn rounded-full text-[#9538E2] my-4"
+  onClick={() => document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' })}
+>
+  Shop Now
+</button>
 <div className="w-7/12 p-2 ">
   <div className="absolute -bottom-72 ">
   <img 

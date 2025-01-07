@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div >
             <HeroMain />
-            <div className='h-[360px]'></div>                    
+            <div className='h-[360px]' id='shop'></div>                    
             <Categories categories={categories}/>
             <Outlet/>
         </div>

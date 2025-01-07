@@ -28,23 +28,23 @@ const Addtowishlist = () => {
 
       <ul>
         {wishcart.map((product) => (
-          <div key={product.id} className="flex items-center mt-4 mb-4 bg-white mx-4 sm:mx-auto rounded-lg">
+          <div key={product.id} className="flex items-center mt-4  mb-4 bg-white px-10 sm:mx-auto rounded-lg">
             <img
-              className="h-24 w-auto pl-3"
+              className="h-24 w-auto pl-3 mr-5 bg-slate-100"
               src={product.product_image}
               alt={product.product_title}
             />
             <div className="flex justify-between w-full pr-5">
-              <div>
-                <h2 className="font-bold">{product.product_title}</h2>
-                <p className="text-gray-600">{product.description}</p>
-                <p className="text-gray-800">Price: ${product.price}</p>
+              <div className='my-2'>
+                <h2 className="font-bold ">{product.product_title}</h2>
+                <p className="text-gray-600 mt-1">{product.description}</p>
+                <p className="text-gray-800 mt-1">Price: ${product.price}</p>
+                <button className="btn mt-1 bg-[#9538E2] text-white rounded-full text-xs "  onClick={handladdtocart}>Add to Card</button>
               </div>
               <RxCross2
                 onClick={() => removeFromwishlist(product.product_id)}
                 className="text-red-700 text-2xl border border-red-700 rounded-full p-1 hover:text-red-500 hover:border-red-500 transition-all duration-300"
               />
-            <button onClick={handladdtocart}>add</button>
             </div>
           </div>
         ))}
