@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -52,6 +53,9 @@ const FAQ = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
+      <Helmet>
+      <title>Gadget Heaven - FAQ</title>
+      </Helmet>
       <h2 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqData.map((faq, index) => (

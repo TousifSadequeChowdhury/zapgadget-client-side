@@ -3,6 +3,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useParams ,useLoaderData } from 'react-router-dom';
 import { CartContext } from '../CartProvider';
 import { ToastContainer, toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
+
 const Detail = () => {
 const add = () => toast("Item added to cart!");
 const addToWishlist = () => toast("Item added to wishlist!");
@@ -41,6 +43,9 @@ else{
 
 return (
     <div className="py-6">
+          <Helmet>
+        <title>Gadget Heaven - Product Details</title>
+      </Helmet>
       {/* Header */}
       <div className="px-20 h-64 bg-[#9538E2]">
         <div className="flex flex-col items-center justify-center">
