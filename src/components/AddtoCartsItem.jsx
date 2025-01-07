@@ -14,7 +14,7 @@ const AddtoCartsItem = () => {
       <div className="flex items-center justify-between mx-9">
         <h1 className="font-bold">Cart</h1>
         <div className="flex items-center gap-3">
-      <h1 className="font-bold">Total cost: {totalPrice}</h1>
+      <h1 className="font-bold">Total cost: ${totalPrice}</h1>
       <button className="bg-transparent hover:bg-[#9538E2] text-[#9538E2] font-semibold hover:text-white py-2 px-4 border border-[#9538E2] rounded-full hover:border-transparent" onClick={handlesortbyprice}>Sort by Price</button>
       <button className="btn bg-[#9538E2] text-white rounded-full" onClick={()=>document.getElementById('my_modal_5').showModal()}>Purchase</button>
       </div>
@@ -25,7 +25,7 @@ const AddtoCartsItem = () => {
   <h3 className="font-bold text-lg text-center">Payment Successfully!</h3>
   <p className="py-4 ">Thanks for purchasing</p>
   <img src={priceicon} alt="Price Icon" className="" />
-  <p className="py-4">Total price: {totalPrice}</p>
+  <p className="py-4">Total price: ${totalPrice}</p>
   <div className="modal-action">
     <form method="dialog">
       {/* if there is a button in form, it will close the modal */}

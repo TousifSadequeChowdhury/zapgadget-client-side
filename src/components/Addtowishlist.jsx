@@ -7,6 +7,7 @@ const Addtowishlist = () => {
 
 const remove = () => toast("Successfully removed from Wiah List!");
 const alreadyInCart = () => toast("Item already exists in the cart!");
+const add = () => toast("Item added to cart!");
 
 
  const {addToCart} =useContext(CartContext);
@@ -22,6 +23,7 @@ const alreadyInCart = () => toast("Item already exists in the cart!");
       addToCart(product); // Only add to cart if the product is not already there
       productIds.push(Number(product.product_id)); // Add the product_id to productIds to track it
       removeFromwishlist(product.product_id)
+      add();
     }
   });
  }
