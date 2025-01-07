@@ -1,0 +1,18 @@
+[
+  {
+    "category_id": 102,
+    "category": "All"
+  },   
+  {
+        "category_id": 101,
+        "category": "Smartphone"
+      },
+      {
+        "category_id": 102,
+        "category": "Laptop"
+      },
+      {
+        "category_id": 103,
+        "category": "Smartwatch"
+      }
+    ]

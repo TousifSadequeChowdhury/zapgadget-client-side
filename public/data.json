@@ -1,0 +1,218 @@
+[
+  {
+    "product_id": 1,
+    "category_id": 101,
+    "product_title": "Apple iPhone 15 Pro",
+    "product_image": "https://i.ibb.co.com/JxnHvd1/Apple-i-Phone-15-Pro.jpg",
+    "category": "Smartphone",
+    "price": 999.99,
+    "description": "The latest iPhone with improved camera and performance.",
+    "specifications": [
+      "5G Connectivity",
+      "6.1-inch display",
+      "Triple-camera system",
+      "A17 Bionic chip"
+    ],
+    "availability": true,
+    "rating": 3.8
+  },
+  {
+    "product_id": 2,
+    "category_id": 101,
+    "product_title": "Samsung Galaxy S24 Ultra",
+    "product_image": "https://i.ibb.co.com/NptRG6Q/Samsung-Galaxy-S24-Ultra.webp",
+    "category": "Smartphone",
+    "price": 1199.99,
+    "description": "Premium smartphone with incredible display and battery life.",
+    "specifications": [
+      "120Hz Dynamic AMOLED display",
+      "Snapdragon 8 Gen 3",
+      "Quad-camera setup"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 3,
+    "category_id": 101,
+    "product_title": "OnePlus 11 Pro",
+    "product_image": "https://i.ibb.co.com/f1tgXHs/One-Plus-11-Pro.png",
+    "category": "Smartphone",
+    "price": 849.99,
+    "description": "A flagship phone with fast charging and great performance.",
+    "specifications": [
+      "6.7-inch Fluid AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "50 MP camera"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 4,
+    "category_id": 101,
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/ssm4L1V/Google-Pixel-8-Pro.png",
+    "category": "Smartphone",
+    "price": 1049.99,
+    "description": "Google's latest phone with the best camera and AI features.",
+    "specifications": [
+      "Google Tensor G3 chip",
+      "50 MP camera",
+      "6.7-inch LTPO OLED display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 5,
+    "category_id": 101,
+    "product_title": "Xiaomi Mi 13 Pro",
+    "product_image": "https://i.ibb.co.com/jfKHCJD/Xiaomi-Mi-13-Pro.jpg",
+    "category": "Smartphone",
+    "price": 899.99,
+    "description": "High-performance phone with a Leica camera system.",
+    "specifications": [
+      "6.73-inch AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "50 MP camera"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 6,
+    "category_id": 101,
+    "product_title": "Realme GT 2 Pro",
+    "product_image": "https://i.ibb.co.com/Stf46W2/Realme-GT-2-Pro.jpg",
+    "category": "Smartphone",
+    "price": 799.99,
+    "description": "Flagship phone with top-tier performance and design.",
+    "specifications": [
+      "6.7-inch LTPO AMOLED display",
+      "Snapdragon 8 Gen 1",
+      "50 MP camera"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 7,
+    "category_id": 102,
+    "product_title": "MacBook Pro 16-inch",
+    "product_image": "https://i.ibb.co.com/sWD4VcH/mac.webp",
+    "category": "Laptop",
+    "price": 2499.99,
+    "description": "Powerful laptop for professional users with M2 Pro chip.",
+    "specifications": [
+      "16-inch Retina Display",
+      "Apple M2 Pro chip",
+      "16 GB RAM",
+      "1 TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 8,
+    "category_id": 102,
+    "product_title": "Dell XPS 15",
+    "product_image": "https://i.ibb.co.com/4Wh2nHP/dell.jpg",
+    "category": "Laptop",
+    "price": 1799.99,
+    "description": "A premium laptop for creatives and professionals.",
+    "specifications": [
+      "15.6-inch OLED display",
+      "Intel Core i7-13700H",
+      "32 GB RAM",
+      "512 GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 9,
+    "category_id": 102,
+    "product_title": "Razer Blade 14",
+    "product_image": "https://i.ibb.co.com/dKWRpSQ/Razer-Blade-14.webp",
+    "category": "Laptop",
+    "price": 1999.99,
+    "description": "Compact gaming laptop with powerful performance.",
+    "specifications": [
+      "14-inch QHD display",
+      "AMD Ryzen 9 7900HX",
+      "16 GB RAM",
+      "1 TB SSD"
+    ],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": 10,
+    "category_id": 102,
+    "product_title": "Microsoft Surface Laptop 5",
+    "product_image": "https://i.ibb.co.com/dJbQLGq/Microsoft-Surface-Laptop-5.webp",
+    "category": "Laptop",
+    "price": 1699.99,
+    "description": "Sleek laptop with ultra-responsive touch screen.",
+    "specifications": [
+      "13.5-inch PixelSense touchscreen",
+      "Intel Core i7",
+      "16 GB RAM",
+      "512 GB SSD"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 11,
+    "category_id": 102,
+    "product_title": "Lenovo ThinkPad X1 Carbon Gen 11",
+    "product_image": "https://i.ibb.co.com/4WwbtG9/Lenovo-Think-Pad-X1-Carbon-Gen-11.webp",
+    "category": "Laptop",
+    "price": 2299.99,
+    "description": "Ultralight and powerful business laptop with Intel Core i7.",
+    "specifications": [
+      "14-inch UHD display",
+      "Intel Core i7",
+      "16 GB RAM",
+      "1 TB SSD"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  
+  {
+    "product_id": 13,
+    "category_id": 103,
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://i.ibb.co.com/WtnXyrf/Apple-Watch-Series-9.jpg",
+    "category": "Smartwatch",
+    "price": 599.99,
+    "description": "Smartwatch with enhanced health features and better performance.",
+    "specifications": [
+      "Always-on Retina display",
+      "Blood oxygen and ECG app",
+      "Up to 18 hours of battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  
+  {
+    "product_id": 15,
+    "category_id": 103,
+    "product_title": "Fitbit Sense 2",
+    "product_image": "https://i.ibb.co.com/jhrcQh2/Fitbit-Sense-2.jpg",
+    "category": "Smartwatch",
+    "price": 299.99,
+    "description": "Advanced health smartwatch with stress management.",
+    "specifications": [
+      "Stress management tracking",
+      "ECG app",
+      "Battery life up to 6 days"
+    ],
+    "availability": true,
+    "rating": 4.5
+  }
+]
