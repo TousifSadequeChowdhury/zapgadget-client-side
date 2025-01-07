@@ -35,6 +35,7 @@ const Nav = () => {
               <li><a>Home</a></li>
               <li><a>Statistics</a></li>
               <li><a>Dashboard</a></li>
+              <li><a>FAQ</a></li>
             </ul>
           </div>
          
@@ -44,6 +45,7 @@ const Nav = () => {
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/deshbord/addtocart">Dashboard</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
             <li><a>Statistics</a></li>
           </ul>
         </div>

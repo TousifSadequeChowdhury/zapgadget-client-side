@@ -14,6 +14,7 @@ import { CartProvider } from './components/CartProvider';
 import ErrorPage from './components/Errorpage';
 import AddtoCartsItem from './components/AddtoCartsItem';
 import Addtowishlist from './components/Addtowishlist';
+import FAQ from './components/faq/FAQ';
 //import { CartProvider } from './CartContext';
 
 const router = createBrowserRouter([
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
             element: <ErrorPage />,
         
           }
+
         ]
       },
       {
@@ -65,8 +67,14 @@ const router = createBrowserRouter([
        }
       ]
       },
+      {
+        path: "/faq",
+        element: <FAQ/>
+    
+      }
     ],
   },
+  
 ]);
 
 createRoot(document.getElementById('root')).render(
