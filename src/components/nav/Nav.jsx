@@ -43,7 +43,7 @@ const Nav = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/deshbord">Dashboard</Link></li>
+            <li><Link to="/deshbord/addtocart">Dashboard</Link></li>
             <li><a>Statistics</a></li>
           </ul>
         </div>

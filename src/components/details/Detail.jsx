@@ -2,9 +2,13 @@ import React, { useContext } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
 import { useParams ,useLoaderData } from 'react-router-dom';
 import { CartContext } from '../CartProvider';
-
-
+import { ToastContainer, toast } from 'react-toastify';
 const Detail = () => {
+const add = () => toast("Item added to cart!");
+const addToWishlist = () => toast("Item added to wishlist!");
+const alreadyInCart = () => toast("Item already exists in the cart!");
+const alreadyInWishList = () => toast("Item already exists in the Wish List!");
+
 const {addToCart,cart} =useContext(CartContext);
 const {addToWishcart,wishcart} =useContext(CartContext);
 const { product_id , price} = useParams(); 
@@ -15,11 +19,10 @@ const { product_id , price} = useParams();
   const wishproductsIds =wishcart.map(item => item.product_id);
   const handleAddToCart=()=>{
   if(productIds.includes(Number(product_id))){
-    alert('This product already exists!');
-    console.log('cccc');
+    alreadyInCart();
   }else{
    addToCart(product);
-
+   add();
   }
  
 }
@@ -27,13 +30,11 @@ const { product_id , price} = useParams();
 const handleAddToWish=()=>{
 if(wishproductsIds.includes(Number(product_id)))
 {
-  alert('This product already exists!');
-
+  alreadyInWishList();
 }
 else{
   addToWishcart(product);
-  console.log(product)
-  console.log(wishcart)
+  addToWishlist();
 }
  
  }
@@ -105,13 +106,10 @@ return (
 
           {/* Add to Cart Button */}
           <div className="flex items-center gap-4 mb-5">
-          {/* <ToastContainer /> */}
-
+   
             <button
               className="btn rounded-full bg-[#9538E2] text-white px-6 py-2"
-       onClick={() => handleAddToCart(
-        
-        )}>
+      onClick={() =>handleAddToCart()}>
                Add To Cart
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -130,9 +128,7 @@ return (
               </button>
               
             {/* Wishlist Icon */}
-            <div className="p-1 rounded-full inline-flex items-center justify-center hover:bg-[#9538e249] border-gray-300 border" onClick={() => handleAddToWish(
-        
-      )}>
+        <div className="p-1 rounded-full inline-flex items-center justify-center hover:bg-[#9538e249] border-gray-300 border" onClick={() => handleAddToWish()}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -151,6 +147,8 @@ return (
           </div>
         </div>
       </div>
+            <ToastContainer />
+      
     </div>
   );
 };
