@@ -44,10 +44,10 @@ else{
 return (
     <div className="py-6">
           <Helmet>
-        <title>Gadget Heaven - Product Details</title>
+        <title>ZapGadget  - Product Details</title>
       </Helmet>
       {/* Header */}
-      <div className="px-20 h-64 bg-[#9538E2]">
+      <div className="px-20 h-64 bg-[#3B1C32]">
         <div className="flex flex-col items-center justify-center">
           <h1 className="font-extrabold text-xl text-center text-white">Product Details</h1>
           <p className="text-center text-sm text-white">
@@ -113,7 +113,7 @@ return (
           <div className="flex items-center gap-4 mb-5">
    
             <button
-              className="btn rounded-full bg-[#9538E2] text-white px-6 py-2"
+              className="btn rounded-full bg-[#3B1C32] text-white px-6 py-2"
       onClick={() =>handleAddToCart()}>
                Add To Cart
               <svg
@@ -133,7 +133,7 @@ return (
               </button>
               
             {/* Wishlist Icon */}
-        <div className="p-1 rounded-full inline-flex items-center justify-center hover:bg-[#9538e249] border-gray-300 border" onClick={() => handleAddToWish()}>
+        <div className="p-1 rounded-full inline-flex items-center justify-center hover:bg-[#3B1C3249] border-gray-300 border" onClick={() => handleAddToWish()}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -1,9 +1,9 @@
-#  Gadget Haven
+#  ZapGadget 
 
 A user-friendly web platform for exploring, purchasing, and reviewing gadgets.
 
 ## Live Website Link
-[Gadget Haven Live](https://reliable-vacherin-a2383f.netlify.app/)
+[ZapGadget  Live](https://reliable-vacherin-a2383f.netlify.app/)
 
 ## Requirement Document Link
 [Requirement Document](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)

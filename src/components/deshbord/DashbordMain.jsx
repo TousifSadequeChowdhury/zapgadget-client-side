@@ -7,7 +7,7 @@ const DashbordMain = () => {
     return (
         <div>
     <Helmet>
-        <title>Gadget Heaven - Dashboard</title>
+        <title>ZapGadget  - Dashboard</title>
     </Helmet>
             <Dashbord></Dashbord>
             <Outlet>

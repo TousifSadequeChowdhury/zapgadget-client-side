@@ -10,8 +10,8 @@ const FAQ = () => {
 
   const faqData = [
     {
-      question: "What is Gadget Heaven?",
-      answer: "Gadget Heaven is an online platform where users can browse, buy, and explore the latest gadgets, electronics, and accessories. We provide detailed product descriptions, reviews, and ratings to help customers make informed decisions."
+      question: "What is ZapGadget ?",
+      answer: "ZapGadget  is an online platform where users can browse, buy, and explore the latest gadgets, electronics, and accessories. We provide detailed product descriptions, reviews, and ratings to help customers make informed decisions."
     },
     {
       question: "How do I make a purchase?",
@@ -43,7 +43,7 @@ const FAQ = () => {
     },
     {
       question: "Are your products genuine and warranty-covered?",
-      answer: "Yes, all products sold on Gadget Heaven are 100% genuine and come with the manufacturer's warranty. You can find detailed warranty information on each product page."
+      answer: "Yes, all products sold on ZapGadget  are 100% genuine and come with the manufacturer's warranty. You can find detailed warranty information on each product page."
     },
     {
       question: "How can I stay updated on new products and offers?",
@@ -54,7 +54,7 @@ const FAQ = () => {
   return (
     <div className="max-w-4xl mx-auto p-6">
       <Helmet>
-      <title>Gadget Heaven - FAQ</title>
+      <title>ZapGadget  - FAQ</title>
       </Helmet>
       <h2 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
       <div className="space-y-4">

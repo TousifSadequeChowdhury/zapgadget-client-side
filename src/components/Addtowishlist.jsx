@@ -47,7 +47,7 @@ const add = () => toast("Item added to cart!");
                 <h2 className="font-bold ">{product.product_title}</h2>
                 <p className="text-gray-600 mt-1">{product.description}</p>
                 <p className="text-gray-800 mt-1">Price: ${product.price}</p>
-                <button className="btn mt-1 bg-[#9538E2] text-white rounded-full text-xs "  onClick={handladdtocart}>Add to Card</button>
+                <button className="btn mt-1 bg-[#3B1C32] text-white rounded-full text-xs "  onClick={handladdtocart}>Add to Card</button>
               </div>
               <RxCross2
                 onClick={() =>{ removeFromwishlist(product.product_id);

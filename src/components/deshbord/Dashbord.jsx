@@ -3,12 +3,12 @@ import { Link, useLocation  } from 'react-router-dom';
 
 const Deshbord = () => {
   const location = useLocation();
-  const activeStyle = 'bg-white text-[#9538E2]';
-  const inactiveStyle = 'bg-[#9538E2] text-white';
+  const activeStyle = 'bg-white text-[#3B1C32]';
+  const inactiveStyle = 'bg-[#3B1C32] text-white';
   
     return (
         <div className='h-52'>
-        <div className="bg-[#9538E2] px-20 h-52">
+        <div className="bg-[#3B1C32] px-20 h-52">
     <div className='flex flex-col  items-center justify-center '>
     <h1 className='font-extrabold text-xl text-center text-white'>Dashboard</h1>
     <p className='text-center text-sm text-white'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

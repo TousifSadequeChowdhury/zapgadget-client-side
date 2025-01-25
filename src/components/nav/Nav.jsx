@@ -10,10 +10,10 @@ const Nav = () => {
   // Update nav color and text color based on pathname
   useEffect(() => {
     if (location.pathname === '/') {
-      setNavColor('bg-[#9538E2]');
+      setNavColor('bg-[#3B1C32]');
       setTextColor('text-white');
     } else if (isCardsPage) {
-      setNavColor('bg-[#9538E2]');
+      setNavColor('bg-[#3B1C32]');
       setTextColor('text-white');
     } else {
       setNavColor('bg-white');
@@ -39,7 +39,7 @@ const Nav = () => {
             </ul>
           </div>
          
-          <Link className="btn btn-ghost text-xl" to="/">Gadget Heaven</Link>
+          <Link className="btn btn-ghost text-xl" to="/">ZapGadget </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
