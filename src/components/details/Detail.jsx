@@ -1,74 +1,70 @@
 import React, { useContext } from 'react';
 import 'react-toastify/dist/ReactToastify.css';
-import { useParams ,useLoaderData } from 'react-router-dom';
+import { useParams, useLoaderData } from 'react-router-dom';
 import { CartContext } from '../CartProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import { Helmet } from 'react-helmet';
 
 const Detail = () => {
-const add = () => toast("Item added to cart!");
-const addToWishlist = () => toast("Item added to wishlist!");
-const alreadyInCart = () => toast("Item already exists in the cart!");
-const alreadyInWishList = () => toast("Item already exists in the Wish List!");
+  const add = () => toast("Item added to cart!");
+  const addToWishlist = () => toast("Item added to wishlist!");
+  const alreadyInCart = () => toast("Item already exists in the cart!");
+  const alreadyInWishList = () => toast("Item already exists in the Wish List!");
 
-const {addToCart,cart} =useContext(CartContext);
-const {addToWishcart,wishcart} =useContext(CartContext);
-const { product_id , price} = useParams(); 
+  const { addToCart, cart } = useContext(CartContext);
+  const { addToWishcart, wishcart } = useContext(CartContext);
+  const { product_id } = useParams();
 
-  const data = useLoaderData();  
+  const data = useLoaderData();
   const product = data ? data.find((item) => item.product_id === Number(product_id)) : null;
   const productIds = cart.map(item => item.product_id);
-  const wishproductsIds =wishcart.map(item => item.product_id);
-  const handleAddToCart=()=>{
-  if(productIds.includes(Number(product_id))){
-    alreadyInCart();
-  }else{
-   addToCart(product);
-   add();
-  }
- 
-}
+  const wishproductsIds = wishcart.map(item => item.product_id);
 
-const handleAddToWish=()=>{
-if(wishproductsIds.includes(Number(product_id)))
-{
-  alreadyInWishList();
-}
-else{
-  addToWishcart(product);
-  addToWishlist();
-}
- 
- }
+  const handleAddToCart = () => {
+    if (productIds.includes(Number(product_id))) {
+      alreadyInCart();
+    } else {
+      addToCart(product);
+      add();
+    }
+  };
 
-return (
+  const handleAddToWish = () => {
+    if (wishproductsIds.includes(Number(product_id))) {
+      alreadyInWishList();
+    } else {
+      addToWishcart(product);
+      addToWishlist();
+    }
+  };
+
+  return (
     <div className="py-6">
-          <Helmet>
-        <title>ZapGadget  - Product Details</title>
+      <Helmet>
+        <title>ZapGadget - Product Details</title>
       </Helmet>
+
       {/* Header */}
-      <div className="px-20 h-64 bg-[#3B1C32]">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="font-extrabold text-xl text-center text-white">Product Details</h1>
-          <p className="text-center text-sm text-white">
-            Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
-          </p>
-        </div>
+      <div className="px-6 md:px-20 h-64 bg-[#3B1C32] flex flex-col items-center justify-center mb-20">
+        <h1 className="font-extrabold text-lg md:text-xl text-center text-white">Product Details</h1>
+        <p className="text-center text-sm md:text-base text-white">
+          Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+        </p>
       </div>
 
       {/* Product Details */}
-      <div className="card card-side bg-base-100 w-8/12 h-auto shadow-xl flex items-center justify-center mx-auto -mt-40">
-        <figure className="px-5">
+      <div className="card card-side bg-base-100 w-11/12 md:w-8/12 mx-auto shadow-xl flex flex-col md:flex-row items-center justify-center -mt-32">
+        <figure className="px-4 py-4 md:px-5">
           <img
             src={product.product_image}
             alt={product.product_title}
-            className="rounded-xl h-96"
+            className="rounded-xl h-64 md:h-96 w-full object-cover"
           />
         </figure>
-        <div className="flex flex-col gap-2 px-6 py-5">
-          <h2 className="font-black mt-5 text-lg">{product.product_title}</h2>
-          <p className="text-xl font-semibold">Price: ${product.price}</p>
-          <div>
+        <div className="flex flex-col gap-4 px-4 md:px-6 py-5 w-full">
+          <h2 className="font-black text-md md:text-lg text-center md:text-left">{product.product_title}</h2>
+          <p className="text-lg font-semibold text-center md:text-left">Price: ${product.price}</p>
+          <div className="text-center md:text-left">
             {product.availability ? (
               <span className="px-2 py-1 text-green-600 bg-green-200 rounded-full text-xs border border-green-600">
                 In Stock
@@ -79,7 +75,7 @@ return (
               </span>
             )}
           </div>
-          <p className="mt-2 text-md">{product.description}</p>
+          <p className="mt-2 text-sm md:text-md text-justify">{product.description}</p>
 
           {/* Product Specifications */}
           <h3 className="font-semibold mt-4">Specification</h3>
@@ -88,7 +84,7 @@ return (
           ))}
 
           {/* Product Rating */}
-          <div className="flex items-center gap-2 mb-5 mt-4">
+          <div className="flex items-center gap-2 mt-4">
             <p className="font-semibold text-sm">Rating</p>
             {[...Array(5)].map((_, index) => (
               <svg
@@ -109,13 +105,13 @@ return (
             ))}
           </div>
 
-          {/* Add to Cart Button */}
-          <div className="flex items-center gap-4 mb-5">
-   
+          {/* Add to Cart and Wishlist Buttons */}
+          <div className="flex items-center gap-4 mt-5">
             <button
-              className="btn rounded-full bg-[#3B1C32] text-white px-6 py-2"
-      onClick={() =>handleAddToCart()}>
-               Add To Cart
+              className="btn rounded-lg bg-[#3B1C32] text-white px-6 py-2 w-10/12 md:w-auto"
+              onClick={() => handleAddToCart()}
+            >
+              Add To Cart
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -130,10 +126,12 @@ return (
                   d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
                 />
               </svg>
-              </button>
-              
-            {/* Wishlist Icon */}
-        <div className="p-1 rounded-full inline-flex items-center justify-center hover:bg-[#3B1C3249] border-gray-300 border" onClick={() => handleAddToWish()}>
+            </button>
+
+            <div
+              className="p-2 rounded-full inline-flex items-center justify-center hover:bg-[#3B1C3249] border-gray-300 border cursor-pointer"
+              onClick={() => handleAddToWish()}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -152,8 +150,8 @@ return (
           </div>
         </div>
       </div>
-            <ToastContainer />
-      
+
+      <ToastContainer />
     </div>
   );
 };
