@@ -1,18 +1,58 @@
 [
   {
-    "category_id": 102,
+    "category_id": 100,
     "category": "All"
-  },   
+  },
   {
-        "category_id": 101,
-        "category": "Smartphone"
-      },
-      {
-        "category_id": 102,
-        "category": "Laptop"
-      },
-      {
-        "category_id": 103,
-        "category": "Smartwatch"
-      }
-    ]
+    "category_id": 101,
+    "category": "Smartphone"
+  },
+  {
+    "category_id": 102,
+    "category": "Laptop"
+  },
+  {
+    "category_id": 103,
+    "category": "Smartwatch"
+  },
+  {
+    "category_id": 104,
+    "category": "Tablet"
+  },
+  {
+    "category_id": 105,
+    "category": "Headphones"
+  },
+  {
+    "category_id": 106,
+    "category": "Earbuds"
+  },
+  {
+    "category_id": 107,
+    "category": "Camera"
+  },
+  {
+    "category_id": 108,
+    "category": "Drone"
+  },
+  {
+    "category_id": 109,
+    "category": "VR Headset"
+  },
+  {
+    "category_id": 110,
+    "category": "Gaming Console"
+  },
+  {
+    "category_id": 111,
+    "category": "Smart Home Devices"
+  },
+  {
+    "category_id": 112,
+    "category": "Wearable Tech"
+  },
+  {
+    "category_id": 113,
+    "category": "3D Printers"
+  }
+]
