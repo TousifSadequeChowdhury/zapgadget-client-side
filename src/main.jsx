@@ -15,6 +15,7 @@ import ErrorPage from './components/Errorpage';
 import AddtoCartsItem from './components/AddtoCartsItem';
 import Addtowishlist from './components/Addtowishlist';
 import FAQ from './components/faq/FAQ';
+import ProductAdd from './components/admin/ProductAdd';
 //import { CartProvider } from './CartContext';
 
 const router = createBrowserRouter([
@@ -49,9 +50,7 @@ const router = createBrowserRouter([
       {
         path: "cards/:category/detail/:product_id",
         element: <Detail />,
-        loader: () => fetch('/data.json'),
-  
-
+        loader: () => fetch('http://localhost:5000/api/products').then(res => res.json()),
       },
   
       {
@@ -70,6 +69,11 @@ const router = createBrowserRouter([
       {
         path: "/faq",
         element: <FAQ/>
+    
+      },
+      {
+        path: "/productadd",
+        element:<ProductAdd></ProductAdd>
     
       }
     ],

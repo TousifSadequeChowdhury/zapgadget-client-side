@@ -13,7 +13,7 @@ const Home = () => {
             </Helmet>
 
             {/* Hero Section */}
-            <div className="w-full">
+            <div className="w-full mb-32 lg:mb-2">
                 <HeroMain />
             </div>
 

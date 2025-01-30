@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import 'react-toastify/dist/ReactToastify.css';
 import { useParams, useLoaderData } from 'react-router-dom';
 import { CartContext } from '../CartProvider';
 import { ToastContainer, toast } from 'react-toastify';
 import { Helmet } from 'react-helmet';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Detail = () => {
   const add = () => toast("Item added to cart!");
@@ -15,13 +15,13 @@ const Detail = () => {
   const { addToWishcart, wishcart } = useContext(CartContext);
   const { product_id } = useParams();
 
-  const data = useLoaderData();
-  const product = data ? data.find((item) => item.product_id === Number(product_id)) : null;
-  const productIds = cart.map(item => item.product_id);
-  const wishproductsIds = wishcart.map(item => item.product_id);
+  const data = useLoaderData(); // Fetch data from loader
+  const product = data ? data.find((item) => item._id === product_id) : null; // Match using _id
+  const productIds = cart.map(item => item._id); // Map cart items to _id
+  const wishproductsIds = wishcart.map(item => item._id); // Map wishcart items to _id
 
   const handleAddToCart = () => {
-    if (productIds.includes(Number(product_id))) {
+    if (productIds.includes(product_id)) {
       alreadyInCart();
     } else {
       addToCart(product);
@@ -30,13 +30,15 @@ const Detail = () => {
   };
 
   const handleAddToWish = () => {
-    if (wishproductsIds.includes(Number(product_id))) {
+    if (wishproductsIds.includes(product_id)) {
       alreadyInWishList();
     } else {
       addToWishcart(product);
       addToWishlist();
     }
   };
+
+  if (!product) return <div>Product not found.</div>;
 
   return (
     <div className="py-6">
@@ -56,16 +58,16 @@ const Detail = () => {
       <div className="card card-side bg-base-100 w-11/12 md:w-8/12 mx-auto shadow-xl flex flex-col md:flex-row items-center justify-center -mt-32">
         <figure className="px-4 py-4 md:px-5">
           <img
-            src={product.product_image}
-            alt={product.product_title}
+            src={product.productImage}
+            alt={product.productTitle}
             className="rounded-xl h-64 md:h-96 w-full object-cover"
           />
         </figure>
         <div className="flex flex-col gap-4 px-4 md:px-6 py-5 w-full">
-          <h2 className="font-black text-md md:text-lg text-center md:text-left">{product.product_title}</h2>
+          <h2 className="font-black text-md md:text-lg text-center md:text-left">{product.productTitle}</h2>
           <p className="text-lg font-semibold text-center md:text-left">Price: ${product.price}</p>
           <div className="text-center md:text-left">
-            {product.availability ? (
+            {product.quantity > 0 ? (
               <span className="px-2 py-1 text-green-600 bg-green-200 rounded-full text-xs border border-green-600">
                 In Stock
               </span>
@@ -77,11 +79,16 @@ const Detail = () => {
           </div>
           <p className="mt-2 text-sm md:text-md text-justify">{product.description}</p>
 
-          {/* Product Specifications */}
-          <h3 className="font-semibold mt-4">Specification</h3>
-          {product.specifications.map((spec, index) => (
-            <p key={index} className="text-sm">{index + 1}. {spec}</p>
-          ))}
+         
+<h3 className="font-semibold mt-4">Specification</h3>
+<ul className="text-sm list-disc pl-5">
+  {product.specifications
+    ? product.specifications.split(',').map((spec, index) => (
+        <li key={index}>{spec.trim()}</li>
+      ))
+    : "No specifications available."}
+</ul>
+
 
           {/* Product Rating */}
           <div className="flex items-center gap-2 mt-4">
