@@ -35,7 +35,7 @@ const Nav = () => {
   className="menu menu-sm dropdown-content bg-[#3B1C32] text-gray-100 rounded-lg z-[1] mt-3 w-40 p-2 shadow-xl shadow-black/50 border border-gray-700 divide-y divide-gray-700"
 >
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/deshbord/addtocart">Dashboard</Link></li>
+              <li><Link to="/deshbord/addtocart">My Items</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/productadd">Product Add</Link></li>
             </ul>
@@ -45,7 +45,7 @@ const Nav = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/deshbord/addtocart">Dashboard</Link></li>
+            <li><Link to="/deshbord/addtocart">My Items</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
             <li><Link to="/productadd">Product Add</Link></li>
           </ul>
