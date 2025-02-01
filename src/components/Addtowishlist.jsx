@@ -47,7 +47,7 @@ const Addtowishlist = () => {
               <div className='my-2'>
                 <h2 className="font-bold">{product.product_title}</h2>
                 <p className="text-gray-600 mt-1">{product.description}</p>
-                <p className="text-gray-800 mt-1">Price: ${product.price}</p>
+                <p className="text-gray-800 mt-1">Price: ৳ {product.price}</p>
                 <button 
                   className="btn mt-1 bg-[#3B1C32] text-white rounded-full text-xs"  
                   onClick={handladdtocart}>

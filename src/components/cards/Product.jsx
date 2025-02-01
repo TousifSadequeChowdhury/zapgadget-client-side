@@ -35,7 +35,7 @@ const Product = ({ product }) => {
 
         {/* Price and Stock Availability */}
         <div className="flex items-center justify-between mb-2">
-          <p className="text-sm font-semibold text-gray-900">${price}</p>
+          <p className="text-sm font-semibold text-gray-900">৳ {price}</p>
           <p className={`text-xs font-semibold ${isOutOfStock ? 'text-red-500' : 'text-green-500'}`}>
             {isOutOfStock ? 'Out of Stock' : `In Stock (${quantity})`}
           </p>

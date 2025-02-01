@@ -65,7 +65,7 @@ const Detail = () => {
         </figure>
         <div className="flex flex-col gap-4 px-4 md:px-6 py-5 w-full">
           <h2 className="font-black text-md md:text-lg text-center md:text-left">{product.productTitle}</h2>
-          <p className="text-lg font-semibold text-center md:text-left">Price: ${product.price}</p>
+          <p className="text-lg font-semibold text-center md:text-left">Price: ৳{product.price}</p>
           <div className="text-center md:text-left">
             {product.quantity > 0 ? (
               <span className="px-2 py-1 text-green-600 bg-green-200 rounded-full text-xs border border-green-600">

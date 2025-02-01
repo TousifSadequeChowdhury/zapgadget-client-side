@@ -14,7 +14,7 @@ const AddtoCartsItem = () => {
       <div className="flex items-center justify-between mx-4 sm:mx-9">
         <h1 className="font-bold text-sm sm:text-lg">Cart</h1>
         <div className="flex items-center gap-3">
-          <h1 className="font-bold text-sm sm:text-lg">Total cost: ${totalPrice}</h1>
+          <h1 className="font-bold text-sm sm:text-lg">Total cost: ৳ {totalPrice}</h1>
           <button
             className="bg-transparent hover:bg-[#3B1C32] text-[#3B1C32] font-semibold hover:text-white py-2 px-4 border border-[#3B1C32] rounded-full hover:border-transparent text-xs sm:text-sm"
             onClick={handlesortbyprice}
@@ -35,7 +35,7 @@ const AddtoCartsItem = () => {
           <h3 className="font-bold text-lg text-center">Payment Successfully!</h3>
           <p className="py-4 text-xs sm:text-sm">Thanks for purchasing</p>
           <img src={priceicon} alt="Price Icon" className="w-16 h-auto mb-4" />
-          <p className="py-4 text-xs sm:text-sm">Total price: ${totalPrice}</p>
+          <p className="py-4 text-xs sm:text-sm">Total price: ৳{totalPrice}</p>
           <div className="modal-action">
             <form method="dialog">
               <button className="btn">Close</button>
@@ -56,7 +56,7 @@ const AddtoCartsItem = () => {
               <div>
                 <h2 className="font-bold text-sm sm:text-base">{product.product_title}</h2>
                 <p className="text-gray-600 text-xs sm:text-sm">{product.description}</p>
-                <p className="text-gray-800 text-sm sm:text-base">Price: ${product.price}</p>
+                <p className="text-gray-800 text-sm sm:text-base">Price: ৳ {product.price}</p>
               </div>
               <MdDelete
                 onClick={() => {
