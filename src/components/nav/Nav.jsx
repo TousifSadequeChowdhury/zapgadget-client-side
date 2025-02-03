@@ -37,7 +37,7 @@ const Nav = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/deshbord/addtocart">My Items</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
-              <li><Link to="/productadd">Product Add</Link></li>
+              <li><Link to="/productadd">Add Product</Link></li>
             </ul>
           </div>
           <Link className="btn btn-ghost text-lg md:text-xl" to="/">ZapGadget</Link>
@@ -47,7 +47,7 @@ const Nav = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/deshbord/addtocart">My Items</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
-            <li><Link to="/productadd">Product Add</Link></li>
+            <li><Link to="/productadd">Add Product</Link></li>
           </ul>
         </div>
         <div className="navbar-end gap-4 flex items-center">

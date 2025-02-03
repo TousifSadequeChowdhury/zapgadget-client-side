@@ -3,10 +3,8 @@
 A user-friendly web platform for exploring, purchasing, and reviewing gadgets.
 
 ## Live Website Link
-[ZapGadget  Live](https://reliable-vacherin-a2383f.netlify.app/)
+[ZapGadget  Live](https://zapgadget.netlify.app/)
 
-## Requirement Document Link
-[Requirement Document](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
 ## React Fundamental Concepts Used in the Project
 - Components: Utilized functional components for creating UI elements like buttons, product cards, and forms.
@@ -23,9 +21,11 @@ A user-friendly web platform for exploring, purchasing, and reviewing gadgets.
 - Local Storage: Utilized local storage to persist the cart data across sessions and ensure that users don’t lose their selected items when they refresh the page.
 
 ## Project Features
-1. Product Availability: Users can view whether a product is available for purchase or out of stock.
-2. Add to Wishlist: Users can add products to their wishlist for future purchase.
-3. Add to Cart: Users can add products to their shopping cart and proceed to checkout.
-4. Remove from Cart: Users can remove products from their cart if they change their mind.
-5. View Products Categorized: Products are displayed according to categories, allowing users to browse more efficiently.
+1. **Product Availability**: Users can view whether a product is available for purchase or out of stock.
+2. **Add to Wishlist**: Users can add products to their wishlist for future purchase.
+3. **Add to Cart**: Users can add products to their shopping cart and proceed to checkout.
+4. **Remove from Cart**: Users can remove products from their cart if they change their mind.
+5. **View Products Categorized**: Products are displayed according to categories, allowing users to browse more efficiently.
+6. **Add Product**: Admins or authorized users can add new products to the platform by providing details like name, description, price, category, and stock.
+
 
