@@ -1,7 +1,7 @@
 #  ZapGadget 
 
 A user-friendly web platform for exploring, purchasing, and reviewing gadgets.
-
+![ZapGadget Screenshot](https://github.com/TousifSadequeChowdhury/zapgadget-client-side/blob/main/zapgadget_ss.png)
 ## Live Website Link
 [ZapGadget  Live](https://zapgadget.netlify.app/)
 
