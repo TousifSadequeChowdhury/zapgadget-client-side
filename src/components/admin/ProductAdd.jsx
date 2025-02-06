@@ -44,7 +44,7 @@ const ProductAdd = () => {
           category,                  // Use category instead of category_id
         };
 
-        const response = await axios.post('http://localhost:5000/api/products', productData);
+        const response = await axios.post('https://zapgadget-server.vercel.app/api/products', productData);
 
         if (response.status === 201) {
           toast.success('Product added successfully!');

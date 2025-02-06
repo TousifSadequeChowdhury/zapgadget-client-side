@@ -29,7 +29,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/products');
+        const response = await axios.get('https://zapgadget-server.vercel.app/api/products');
 
         if (!response.data || response.data.length === 0) {
           throw new Error("No products received from API");

@@ -50,7 +50,7 @@ const router = createBrowserRouter([
       {
         path: "cards/:category/detail/:product_id",
         element: <Detail />,
-        loader: () => fetch('http://localhost:5000/api/products').then(res => res.json()),
+        loader: () => fetch('https://zapgadget-server.vercel.app/api/products').then(res => res.json()),
       },
   
       {
